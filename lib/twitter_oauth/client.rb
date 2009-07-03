@@ -38,6 +38,18 @@ module TwitterOAuth
       oauth_response = access_token.get("/users/show/#{username}.json")
       JSON.parse(oauth_response.body)
     end
+  
+    # Added by HK: to get latest tweets from any user
+    def get_tweets_from(username)
+      user = show(username)  
+      if user['error']
+        return user
+      else  
+        url = "/statuses/user_timeline/#{user['id']}.json"
+        oauth_response = access_token.get(url)
+        JSON.parse(oauth_response.body)
+      end  
+    end    
     
     def request_token
       consumer.get_request_token
