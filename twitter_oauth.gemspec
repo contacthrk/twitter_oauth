@@ -2,16 +2,16 @@
 
 Gem::Specification.new do |s|
   s.name = %q{twitter_oauth}
-  s.version = "0.1.19"
+  s.version = "0.1.20"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Richard Taylor"]
+  s.authors = ["Richard Taylor", "Hemant Khemani"]
   s.date = %q{2009-03-20}
   s.description = %q{twitter_oauth is a Ruby library for talking to twitter using the new oauth method.}
-  s.email = %q{moomerman@gmail.com}
+  s.email = %q{contacthrk@gmail.com}
   s.files = ["README.textile", "lib/twitter_oauth", "lib/twitter_oauth.rb", "lib/twitter_oauth/client.rb", "lib/twitter_oauth/account.rb", "lib/twitter_oauth/statuses.rb", "lib/twitter_oauth/direct_messages.rb", "lib/twitter_oauth/search.rb", "lib/twitter_oauth/blocks.rb" , "lib/twitter_oauth/friendships.rb", "lib/twitter_oauth/notifications.rb", "lib/twitter_oauth/user.rb", "lib/twitter_oauth/favorites.rb", "lib/twitter_oauth/utils.rb"]
   s.has_rdoc = false
-  s.homepage = %q{http://github.com/moomerman/twitter_oauth}
+  s.homepage = %q{http://github.com/contacthrk/twitter_oauth}
   s.rdoc_options = ["--inline-source", "--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{twitter_oauth}
